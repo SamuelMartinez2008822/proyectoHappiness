@@ -24,14 +24,15 @@ nav a {
     color: #000;
     font-weight: bolder;
     font-family: 'open sans', sans-serif;
-    font-size: 14px;
+    font-size: 14px ;
     text-decoration: none;
     padding: 10px 15px;
 }
 
 .howHappy {
     display: flex;
-    height: 120vh;
+    height: auto;
+    padding-top: 100px;
 }
 
 
@@ -40,14 +41,15 @@ nav a {
     justify-content: center;
     align-items: center;
     width: 50%;
+    margin: 30px;
 }
 
 .infoHowHappy {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 9vw 0;
-    max-width: 22%;
+    justify-content: center;
+    padding: 30px;
 }
 
 .infoHowHappy h1 {
@@ -72,15 +74,16 @@ nav a {
 
 .contenedorPosition {
     background-color: #eaeaea;
-    width: 60vw;
+    max-width: 70vw;
     padding: 50px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 900px;
-    left: 21%;
+    position: relative;
+    top: 150px;
+    left: 15%;
     border-radius: 4px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -114,6 +117,7 @@ nav a {
     display: flex;
     gap: 40px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .positionImages img {
@@ -123,14 +127,14 @@ nav a {
 
 .help {
     background-color: #f5cb00;
-    padding: 0 7vw;
+    padding: 19vw 7vw 100px;
     display: flex;
-    height: 124vh;
+    gap: 50px;
+    height: auto;
 }
 
 .infoHelp {
     width: 50%;
-    padding-left: 5vw;
 }
 
 .infoHelp h2 {
@@ -140,7 +144,6 @@ nav a {
     line-height: 0.8;
     color: #000;
     margin-bottom: 25px;
-    padding-top: 35%;
     max-width: 550px;
 }
 
@@ -164,13 +167,13 @@ nav a {
 }
 
 .helpImagen {
-    position: absolute;
-    left: 700px;
-    top: 1460px;
+display: flex; 
+justify-content: center;
+align-items: center; 
 }
 
 .happinessStats {
-    height: 110vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,12 +270,18 @@ nav a {
     align-items: center;
     background-color: #fff;
     color: #000;
-    height: 110vh;
+    height: auto;
+    padding: 5%;
+}
+
+.teamImagen {
+    padding: 20px;
+    width: 50%;
 }
 
 .teamInfo {
-    max-width: 570px;
-    padding: 100px;
+    padding: 20px;
+    width: 50%;
 }
 
 .teamInfo h2 {
@@ -306,11 +315,12 @@ nav a {
     justify-content: center;
     background-color: #E6E6E6;
     gap: 50px;
-    height: 110vh;
+    height: auto;
 }
 
 .methodInfo {
-    max-width: 450px;
+    padding: 20px;
+    width: 50%;
 }
 
 .methodInfo h2 {
@@ -339,25 +349,27 @@ nav a {
     background-color: #e6c200;
 }
 
+.methodImagen {
+    padding: 20px;
+}
+
 .subscribe {
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 110vh;
 }
 
 .subscribeContainer {
     display: flex;
-    max-width: 1074px;
-    gap: 70px;
     align-items: center;
 }
 
 form {
     background-color: #000;
     color: #fff;
-    padding: 70px 40px;
-    flex: 1;
+    padding: 30px 30px;
+    margin: 20px;
+    width: 550px;
 }
 
 .nombreForm {
@@ -394,7 +406,11 @@ form p {
 }
 
 .subscribeInfo {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    align-items: center;
 }
 
 .subscribeInfo h2 {
@@ -404,7 +420,6 @@ form p {
     font-size: 3.5vw;
     line-height: 1;
     margin-bottom: 10px;
-    max-width: 360px;
 }
 
 .subscribeInfo p {
@@ -463,57 +478,517 @@ form p {
 }
 
 .contactInfo button:hover {
-  background-color: #333;
+    background-color: #333;
 }
 
 footer {
-  background-color: #000;
-  color: #fff;
-  padding: 60px 60px 40px;
-  display: flex;
-  flex-direction: column;
-  border-top: 4px solid #FFC107;
+    background-color: #000;
+    color: #fff;
+    padding: 60px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid #FFC107;
 }
 
 .links {
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  flex-wrap: wrap;
-  padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 80px 0;
 }
 
 .columnLinks {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .links a {
-  color: #FFC107;
-  text-decoration: none;    
-  font-weight: 500;
+    color: #FFC107;
+    text-decoration: none;    
+    font-weight: 500;
 }
 
 .footerBajo {
-  border-top: 1px solid #333;
-  padding-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+    border-top: 1px solid #333;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footerBajo p {
-  font-size: 14px;
-  color: #FFC107;
-  font-weight: 400;
+    font-size: 14px;
+    color: #FFC107;
+    font-weight: 400;
 }
 
 .social {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+@media (max-width: 1279px) {
+    .contenedorPosition {
+        max-width: 75vw;
+        left: 12%;
+        top: 120px;
+    }
+
+    .statsContainer {
+        height: 430px;
+    }
+
+    .statsImagen {
+        width: 397px;
+    }
+
+    .grafico {
+        position: relative;
+        left: 150px;
+        bottom: 70px;
+        width: 150px;
+    }
+
+    .aboutUsImagen img{
+        width: 500px;
+    }
+
+    .methodImagen {
+        width: 550px;
+    }
+}
+
+@media (max-width: 920px) {
+    header {
+        flex-direction: column;
+        padding: 1vh 3vw;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .howHappy {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .imgHowHappy, .infoHowHappy {
+        width: 100%;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .infoHowHappy h1 {
+        font-size: 8vw;
+    }
+
+    .contenedorPosition {
+        max-width: 85vw;
+        left: 7.5%;
+        top: 80px;
+        padding: 30px;
+    }
+
+    .infoPosition h2 {
+        font-size: 5vw;
+    }
+
+    .help {
+        flex-direction: column;
+        padding: 15vw 5vw 80px;
+    }
+
+    .infoHelp {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .infoHelp h2 {
+        font-size: 8vw;
+    }
+
+    .statsContainer {
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        align-items: center;
+    }
+
+    .grafico {
+        position: static;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .statsInfo h2 {
+        font-size: 8vw;
+    }
+
+    .aboutUs h2 {
+        font-size: 6vw;
+    }
+
+    .ourTeam {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .teamImagen, .teamInfo {
+        width: 100%;
+    }
+
+    .teamInfo h2 {
+        font-size: 7vw;
+        align-items: center;
+    }
+
+    .method {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .methodInfo {
+        width: 100%;
+    }
+
+    .methodInfo h2 {
+        font-size: 7vw;
+    }
+
+    .subscribeContainer {
+        flex-direction: column;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .subscribeInfo h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    nav a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .imgHowHappy {
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .infoHowHappy h1 {
+        font-size: 10vw;
+    }
+
+    .infoHowHappy p {
+        padding: 30px 0;
+    }
+
+    .contenedorPosition {
+        max-width: 90vw;
+        left: 5%;
+        top: 60px;
+        padding: 25px;
+        gap: 30px;
+    }
+
+    .infoPosition h2 {
+        font-size: 6vw;
+    }
+
+    .positionImages {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .positionImages img {
+        width: 120px;
+    }
+
+    .help {
+        padding: 12vw 4vw 60px;
+        gap: 30px;
+    }
+
+    .infoHelp h2 {
+        font-size: 9vw;
+    }
+
+    .happinessStats {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .statsContainer {
+        margin: 4vw;
+    }
+
+    .statsInfo {
+        padding: 30px;
+    }
+
+    .statsInfo h2 {
+        font-size: 9vw;
+    }
+
+    .aboutUs h2 {
+        font-size: 7vw;
+        padding-top: 50px;
+    }
+
+    .aboutUs img {
+        max-width: 90%;
+    }
+
+    .teamInfo h2 {
+        font-size: 8vw;
+    }
+
+    .methodInfo h2 {
+        font-size: 8vw;
+    }
+
+    .subscribe {
+        height: auto;
+        padding: 40px 0;
+        flex-wrap: wrap;
+    }
+
+    .subscribeInfo {
+        padding: 0 20px;
+    }
+
+    .subscribeInfo h2 {
+        font-size: 7vw;
+    }
+
+    .contact {
+        padding: 40px 30px 60px;
+    }
+
+    .contactInfo h2 {
+        font-size: 6vw;
+    }
+
+    footer {
+        padding: 40px 30px 30px;
+    }
+
+    .links {
+        gap: 40px;
+        padding: 50px 0;
+    }
+
+    .footerBajo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 80px;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    .howHappy {
+        padding-top: 30px;
+    }
+
+    .infoHowHappy h1 {
+        font-size: 12vw;
+    }
+
+    .infoHowHappy p {
+        padding: 20px 0;
+        font-size: 14px;
+    }
+
+    .infoHowHappy button {
+        width: 100px;
+        height: 35px;
+    }
+
+    .contenedorPosition {
+        max-width: 95vw;
+        left: 2.5%;
+        top: 40px;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .infoPosition h2 {
+        font-size: 8vw;
+        max-width: 100%;
+    }
+
+    .infoPosition p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .positionImages img {
+        width: 100px;
+    }
+
+    .help {
+        padding: 10vw 3vw 50px;
+        gap: 20px;
+    }
+
+    .infoHelp h2 {
+        font-size: 11vw;
+    }
+
+    .infoHelp p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .infoHelp button {
+        width: 100px;
+        height: 35px;
+    }
+
+    .statsInfo {
+        padding: 20px;
+    }
+
+    .statsInfo h2 {
+        font-size: 11vw;
+    }
+
+    .statsInfo p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .statsContainer button {
+        width: 100px;
+        height: 35px;
+    }
+
+    .aboutUs h2 {
+        font-size: 9vw;
+        padding-top: 40px;
+    }
+
+    .aboutUs p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .aboutUs button {
+        width: 100px;
+        height: 35px;
+    }
+
+    .teamInfo h2 {
+        font-size: 10vw;
+    }
+
+    .teamInfo p {
+        font-size: 14px;
+    }
+
+    .teamInfo button {
+        width: 100px;
+        height: 35px;
+    }
+
+    .methodInfo h2 {
+        font-size: 10vw;
+    }
+
+    .methodInfo p {
+        font-size: 14px;
+    }
+
+    .methodInfo button {
+        width: 100px;
+        height: 35px;
+    }
+
+    form {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .nombreForm {
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    .subscribeInfo h2 {
+        font-size: 9vw;
+    }
+
+    .subscribeInfo p {
+        font-size: 14px;
+    }
+
+    .subscribeInfo button {
+        width: 100px;
+        height: 35px;
+    }
+
+    .contact {
+        padding: 30px 20px 50px;
+    }
+
+    .contactInfo h2 {
+        font-size: 8vw;
+    }
+
+    .contactInfo p {
+        font-size: 14px;
+    }
+
+    .contactInfo button {
+        width: 100px;
+        height: 35px;
+    }
+
+    footer {
+        padding: 30px 20px 25px;
+    }
+
+    .links {
+        gap: 30px;
+        padding: 40px 0;
+        font-size: 14px;
+    }
+
+    .footerBajo p {
+        font-size: 12px;
+    }
+
+    .social img {
+        width: 24px;
+    }
 }
